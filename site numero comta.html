@@ -1,0 +1,50 @@
+Claro! Transcrevendo o código das imagens:
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Contador</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        h1 {
+            font-size: 80px;
+        }
+
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="contador">0</h1>
+
+    <button onclick="diminuir()">-</button>
+    <button onclick="zerar()">Zerar</button>
+    <button onclick="aumentar()">+</button>
+
+    <script>
+        let valor = 0;
+
+        function aumentar() {
+            valor++;
+            document.getElementById("contador").innerText = valor;
+        }
+
+        function diminuir() {
+            valor--;
+            document.getElementById("contador").innerText = valor;
+        }
+
+        function zerar() 
+            
